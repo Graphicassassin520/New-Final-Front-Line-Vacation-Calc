@@ -27,7 +27,7 @@ function calculateCosts() {
 
     report += `</ul>`;
     // Append a summary of the total cost over 30 years
-    report += `<p style="font-size: 24px; font-weight: bold;">In the next 30 years, you will spend: $${formatNumber(totalProjectedCost.toFixed(2))}</p>`;
+    report += `<p style="font-size: 24px; font-weight: bold;">Over the next 30 years, you will spend: $${formatNumber(totalProjectedCost.toFixed(2))}</p>`;
     document.getElementById('result').innerHTML = output + report;
 }
 
