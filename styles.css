@@ -1,0 +1,87 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #007bff; /* Blue background for aesthetic contrast */
+    color: white; /* White text color for visibility */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* Optimized width for both mobile and desktop views */
+    padding: 20px;
+    background-color: #333; /* Dark background for the container improves readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    text-align: center; /* Center-align text for better presentation */
+    margin: 20px; /* Ensures container does not touch the edges of the viewport */
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px); /* Width calculation accounts for padding */
+    padding: 10px;
+    border-radius: 5px;
+    border: none; /* No border for a cleaner look */
+    background-color: white; /* White background for inputs to ensure readability */
+    color: black; /* Black text for contrast */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+button {
+    width: calc(100% - 20px); /* Matching width to inputs */
+    padding: 10px;
+    background-color: red; /* Red buttons for a strong visual cue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer; /* Indicates that the button is clickable */
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.85; /* Slight transparency on hover for visual feedback */
+}
+
+/* Print specific styles */
+@media print {
+    body, html {
+        height: auto;
+        color: black; /* Black text for printing */
+        background-color: white; /* White background for print */
+    }
+    .container {
+        box-shadow: none; /* Remove shadow for print */
+        width: 100%;
+        max-width: none; /* Full width for printing */
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+    h1, button, form {
+        display: none; /* Hide elements not needed for print */
+    }
+    .result {
+        font-size: 18px; /* Larger font for readability */
+        line-height: 1.8; /* Spacing between lines for clarity */
+    }
+    .signatures {
+        display: block; /* Ensure signatures are shown in print */
+        font-size: 18px; /* Legible font size for signing */
+        margin-top: 50px; /* Space above signature lines */
+    }
+    .signature-line {
+        display: inline-block;
+        width: 300px; /* Width of the line for signatures */
+        border-bottom: 1px solid black; /* Visible line for signatures */
+    }
+    p {
+        margin-bottom: 20px; /* Space between paragraphs and signature prompts */
+    }
+}
