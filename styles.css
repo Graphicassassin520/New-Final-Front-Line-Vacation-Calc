@@ -67,7 +67,7 @@ button:hover {
         display: none; /* Hide elements not needed for print */
     }
     .result {
-        font-size: 18px; /* Larger font for easy reading */
+        font-size: 22px; /* Larger font for easy reading */
         line-height: 1.8; /* Increased line height for printed results */
     }
     .result p {
