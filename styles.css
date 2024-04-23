@@ -68,7 +68,7 @@ button:hover {
     }
     .result {
         font-size: 22px; /* Larger font for easy reading */
-        line-height: 1.8; /* Increased line height for printed results */
+        line-height: 2; /* Increased line height for printed results */
     }
     .result p {
         margin: 0 0 20px; /* Increased margin for paragraphs */
